@@ -1,0 +1,94 @@
+$block: '.footer';
+
+#{$block} {
+  background-color: #F8F8F8;
+  grid-area: footer;
+  padding: 32px 50px 35px;
+
+  &__container {
+    display: flex;
+    padding-right: 73px;
+  }
+
+  &__logo {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #2D2D2F;
+    margin-right: auto;
+  }
+
+  &__links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 31px;
+    margin-top: 10px;
+  }
+
+  &__links-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2D2D2F;
+  }
+
+  &__links-icon-wrapper {
+    display: flex;
+    
+    &_social {
+      gap: 16px;
+    }
+
+    &_store {
+      gap: 20px;
+    }
+  }
+
+  &__link-icon {
+    width: 28px;
+    height: 28px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &_fb {
+      background-image: url(../../../assets/icons/Facebook.svg);
+    }
+
+    &_vk {
+      background-image: url(../../../assets/icons/Vk.svg);
+    }
+
+    &_ig {
+      background-image: url(../../../assets/icons/Inst.svg);
+    }
+
+    &_gp {
+      background-image: url(../../../assets/icons/Google-Play.svg);
+      width: 104px;
+      height: 32px;
+    }
+
+    &_as {
+      background-image: url(../../../assets/icons/App-Store.svg);
+      width: 104px;
+      height: 32px;
+    }
+  }
+
+  &__nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 57px;
+  }
+
+  &__nav-item {
+    color: #8D8D8E;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}

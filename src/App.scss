@@ -1,0 +1,23 @@
+.app {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto 351px;
+  grid-template-rows: 82px auto 215px;
+  height: 100dvh;
+  grid-template-areas:
+    "header sidebar"
+    "content sidebar"
+    "footer footer";
+}
+
+@media screen and (max-width: 1370px) {
+  .app {
+    grid-template-columns: auto;
+    grid-template-rows: 82px auto auto 215px;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "content"
+      "footer";
+  }
+}

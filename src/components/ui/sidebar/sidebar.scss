@@ -1,0 +1,7 @@
+$block: '.sidebar';
+
+#{$block} {
+  border-left: 1px solid #F0F4FB;
+  grid-area: sidebar;
+  padding: 28px 24px 28px 16px;
+}
